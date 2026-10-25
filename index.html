@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dhivya Govindharaj | Machine Learning Engineer</title>
+<meta name="description" content="Portfolio of Dhivya Govindharaj, B.Tech AI and Data Science student skilled in Python, SQL, machine learning and Power BI.">
+<meta name="theme-color" content="#050b1a">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:dark;--bg:#050b1a;--panel:#0c1630;--line:#1a2a4d;--ink:#e6ecfa;--muted:#9fb0d0;--a:#3b82f6;--b:#22d3ee;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 Inter,system-ui,sans-serif}
+h1,h2,h3{font-family:Sora,Inter,sans-serif;margin:0;line-height:1.15}
+a{color:var(--b)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--b);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+header.top{position:sticky;top:0;z-index:20;background:rgba(5,11,26,.88);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font:800 20px Sora,sans-serif;color:var(--ink);text-decoration:none}
+nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0}
+nav a{color:var(--muted);text-decoration:none;font-size:15px}
+nav a:hover{color:var(--ink)}
+#menu{display:none;background:none;border:1px solid var(--line);color:var(--ink);border-radius:8px;padding:8px 12px;font:inherit}
+.hero{position:relative;overflow:hidden;padding:72px 0 88px}
+.hero::before{content:"";position:absolute;width:560px;height:560px;right:-160px;top:-120px;background:radial-gradient(circle,rgba(59,130,246,.35),transparent 65%);pointer-events:none}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.4fr 1fr;gap:40px;align-items:center}
+.hello{color:var(--b);font-weight:500;margin:0 0 10px}
+.hero h1{font-size:clamp(40px,7vw,72px);font-weight:800;letter-spacing:-.03em;background:linear-gradient(90deg,#fff,#9cc2ff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.role{font:600 clamp(19px,3vw,25px)/1.3 Sora,sans-serif;margin:16px 0 12px;color:var(--ink)}
+.lead{color:var(--muted);max-width:50ch;margin:0 0 26px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:13px 22px;border-radius:10px;font-weight:600;text-decoration:none;border:1px solid var(--a);color:var(--ink)}
+.btn.p{background:linear-gradient(90deg,var(--a),#2563eb);border-color:transparent;color:#fff}
+.btn:hover{filter:brightness(1.15)}
+.social{display:flex;gap:18px;margin-top:22px;font-size:15px}
+.social a{color:var(--muted);text-decoration:none}
+.social a:hover{color:var(--ink)}
+.avatar{justify-self:center;width:min(270px,70vw);aspect-ratio:1;border-radius:50%;padding:5px;background:conic-gradient(from 200deg,var(--a),var(--b),var(--a));animation:spin 14s linear infinite}
+.avatar div{width:100%;height:100%;border-radius:50%;background:var(--panel);display:grid;place-items:center;font:800 78px Sora,sans-serif;color:var(--ink);animation:spin 14s linear infinite reverse}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){.avatar,.avatar div{animation:none}html{scroll-behavior:auto}}
+section{padding:68px 0;border-top:1px solid var(--line)}
+section>.wrap>h2{font-size:clamp(28px,4vw,38px);margin-bottom:28px}
+.grid{display:grid;gap:18px}
+.g2{grid-template-columns:repeat(2,1fr)}
+.g3{grid-template-columns:repeat(3,1fr)}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:24px}
+.card:hover{border-color:var(--a)}
+.card h3{font-size:20px;margin-bottom:6px}
+.sub{color:var(--muted);font-size:15px;margin:0 0 12px}
+.card ul{margin:0;padding-left:20px;color:var(--muted)}
+.card li{margin-bottom:6px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px;padding:0;list-style:none}
+.tags li{background:rgba(59,130,246,.14);color:#b9d3ff;border-radius:999px;padding:3px 13px;font-size:14px}
+.about{max-width:70ch;color:var(--muted);font-size:18px}
+.contact a{display:block;color:var(--ink);text-decoration:none;word-break:break-word}
+.contact a:hover{color:var(--b)}
+.contact small{display:block;color:var(--muted)}
+footer{padding:30px 0 40px;border-top:1px solid var(--line);color:var(--muted);text-align:center;font-size:14px}
+@media (max-width:760px){
+ .hero .wrap,.g2,.g3{grid-template-columns:1fr}
+ .hero{padding-top:44px}.avatar{order:-1;width:170px}.avatar div{font-size:52px}
+ #menu{display:block}
+ nav ul{display:none;position:absolute;left:0;right:0;top:64px;flex-direction:column;gap:0;background:var(--bg);border-bottom:1px solid var(--line);padding:6px 22px}
+ nav ul.open{display:flex}
+ nav li a{display:block;padding:12px 0}
+}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+<a class="logo" href="#home">Dhivya G</a>
+<nav aria-label="Main"><button id="menu" aria-expanded="false" aria-controls="links">Menu</button>
+<ul id="links"><li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li><li><a href="#projects">Projects</a></li><li><a href="#experience">Experience</a></li><li><a href="#education">Education</a></li><li><a href="#certs">Certifications</a></li><li><a href="#contact">Contact</a></li></ul></nav>
+</div></header>
+
+<main>
+<section id="home" class="hero" style="border:0"><div class="wrap">
+<div>
+<p class="hello">Hi, I’m</p>
+<h1>Dhivya Govindharaj</h1>
+<p class="role">Machine Learning Engineer | AI &amp; Data Science</p>
+<p class="lead">B.Tech Artificial Intelligence and Data Science student. I clean data, train models in Python, and turn results into dashboards people can use.</p>
+<div class="btns"><a class="btn p" href="#contact">Contact Me</a><a class="btn" href="#projects">View Projects</a></div>
+<div class="social"><a href="https://www.linkedin.com/in/dhivya-g" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/dhivyagovindharaj" target="_blank" rel="noopener">GitHub</a><a href="mailto:ezhildhivya2@gmail.com">Email</a></div>
+</div>
+<div class="avatar" aria-hidden="true"><div>DG</div></div>
+</div></section>
+
+<section id="about"><div class="wrap"><h2>About Me</h2>
+<p class="about">Motivated B.Tech Artificial Intelligence and Data Science student with hands-on experience in Python, SQL, Machine Learning, and Google Cloud Platform. Skilled in data preprocessing, visualization, and predictive modeling, with a strong interest in building and deploying end-to-end AI/ML solutions. Seeking an entry-level Machine Learning Engineer role to apply and grow these skills.</p>
+</div></section>
+
+<section id="skills"><div class="wrap"><h2>Skills</h2>
+<div class="grid g3">
+<div class="card"><h3>Programming</h3><p class="sub">Languages I write daily</p><ul class="tags"><li>Python</li><li>SQL</li></ul></div>
+<div class="card"><h3>Machine Learning</h3><p class="sub">Modeling</p><ul class="tags"><li>Scikit-learn</li><li>Regression</li><li>Classification</li></ul></div>
+<div class="card"><h3>Data Analysis</h3><p class="sub">Analysis and visuals</p><ul class="tags"><li>NumPy</li><li>Pandas</li><li>Matplotlib</li><li>Power BI</li><li>Excel</li></ul></div>
+<div class="card"><h3>Database and Cloud</h3><p class="sub">Storage and queries</p><ul class="tags"><li>MySQL</li><li>Google Cloud Platform</li><li>BigQuery</li><li>Cloud Storage</li></ul></div>
+<div class="card"><h3>Tools</h3><p class="sub">Daily workflow</p><ul class="tags"><li>Git</li><li>GitHub</li><li>Jupyter Notebook</li><li>VS Code</li></ul></div>
+<div class="card"><h3>Soft Skills</h3><p class="sub">Working with people</p><ul class="tags"><li>Problem Solving</li><li>Analytical Thinking</li><li>Communication</li><li>Teamwork</li><li>Time Management</li><li>Adaptability</li></ul></div>
+</div></div></section>
+
+<section id="projects"><div class="wrap"><h2>Projects</h2>
+<div class="grid g2">
+<article class="card"><h3>Student Performance Prediction using Machine Learning</h3>
+<ul class="tags" style="margin-top:12px"><li>Python</li><li>Machine Learning</li><li>Scikit-learn</li></ul>
+<ul><li>Developed a machine learning model to predict student academic performance.</li><li>Performed data cleaning, preprocessing, and feature engineering on the dataset.</li><li>Compared Logistic Regression, Decision Tree, and Random Forest using accuracy, precision, and recall.</li></ul></article>
+<article class="card"><h3>Sales Data Analysis Dashboard</h3>
+<ul class="tags" style="margin-top:12px"><li>Python</li><li>Excel</li><li>Power BI</li></ul>
+<ul><li>Cleaned and analyzed sales data using Python and Excel.</li><li>Built interactive Power BI dashboards to visualize key business insights.</li><li>Generated reports that supported data-driven decision-making.</li></ul></article>
+</div></div></section>
+
+<section id="experience"><div class="wrap"><h2>Internship</h2>
+<article class="card"><h3>AI / Data Science Intern, Inter Deccaan Solutions</h3>
+<p class="sub">2 July 2025 – 17 July 2025</p>
+<ul><li>Performed data preprocessing and visualization for project datasets.</li><li>Assisted in developing and testing machine learning models.</li><li>Documented project outcomes and presented findings to the team.</li></ul></article>
+</div></section>
+
+<section id="education"><div class="wrap"><h2>Education</h2>
+<div class="grid g2">
+<div class="card"><h3>B.Tech, Artificial Intelligence and Data Science</h3><p class="sub">Anna University affiliated college · 2024 – 2027</p><p style="margin:0;color:var(--b);font-weight:600">CGPA: 8.0 / 10</p></div>
+<div class="card"><h3>Higher Secondary Certificate (HSC)</h3><p class="sub">State Board · 2023</p><p style="margin:0;color:var(--muted)">Completed</p></div>
+</div></div></section>
+
+<section id="certs"><div class="wrap"><h2>Certifications and Achievements</h2>
+<div class="grid g2">
+<div class="card"><h3>Certifications</h3><ul style="margin-top:12px"><li>Google Cloud Career Certificate</li><li>Python Programming Certification</li><li>Data Analytical Essentials</li><li>IBM SkillsBuild: Artificial Intelligence Fundamentals</li><li>Machine Learning Workshop</li><li>NPTEL: Introduction to Machine Learning</li><li>Artificial Intelligence, Inter Deccaan Solutions</li></ul></div>
+<div class="card"><h3>Achievements</h3><ul style="margin-top:12px"><li>Participated in hackathons and coding competitions.</li><li>Completed multiple AI and Data Science certifications.</li></ul></div>
+</div></div></section>
+
+<section id="contact"><div class="wrap"><h2>Contact</h2>
+<p class="about" style="margin:0 0 24px">I’m open to entry-level Machine Learning Engineer roles and internships. Email is the fastest way to reach me.</p>
+<div class="grid g3 contact">
+<div class="card"><small>Email</small><a href="mailto:ezhildhivya2@gmail.com">ezhildhivya2@gmail.com</a></div>
+<div class="card"><small>Phone</small><a href="tel:+919943254820">9943254820</a></div>
+<div class="card"><small>Location</small>Dharmapuri, Tamil Nadu</div>
+<div class="card"><small>LinkedIn</small><a href="https://www.linkedin.com/in/dhivya-g" target="_blank" rel="noopener">linkedin.com/in/dhivya-g</a></div>
+<div class="card"><small>GitHub</small><a href="https://github.com/dhivyagovindharaj" target="_blank" rel="noopener">github.com/dhivyagovindharaj</a></div>
+</div></div></section>
+</main>
+<footer>© 2026 Dhivya Govindharaj</footer>
+<script>
+var m=document.getElementById('menu'),l=document.getElementById('links');
+m.addEventListener('click',function(){var o=l.classList.toggle('open');m.setAttribute('aria-expanded',o)});
+l.addEventListener('click',function(e){if(e.target.tagName==='A'){l.classList.remove('open');m.setAttribute('aria-expanded','false')}});
+</script>
+</body>
+</html>
